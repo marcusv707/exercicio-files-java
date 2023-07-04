@@ -19,20 +19,20 @@ public class Product {
         return price;
     }
 
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public Double getTotal() {
-        return quantity * price;
-    }
-
     public void setPrice(Double price) {
         this.price = price;
     }
 
+    public Integer getQuantity() {
+        return quantity;
+    }
+
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
+    }
+
+    public double getTotal() {
+        return price * quantity;
     }
 
     @Override
